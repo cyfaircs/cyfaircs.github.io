@@ -3,31 +3,45 @@
 <html>
 
     <head>
-        <title>CS Club Website</title>   
+        <title>CS Club Website</title>
         <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
 
-        <div class="topleftcorner"><img src="top_left_corner.png"></div>    <!-- change -->
-        <div class="toprightcorner"><img src="top_right_corner.png"></div>   <!-- change -->
-        <div class="bottomleftcorner"><img src="bottom_left_corner.png"></div>   <!-- change -->
-        <div class="bottomrightcorner"><img src="bottom_right_corner.png"></div>     <!-- change -->
-
+        <div class="topleftcorner"><img src="top_left_corner.png"></div>
+        <div class="toprightcorner"><img src="top_right_corner.png"></div>
+        <div class="bottomleftcorner"><img src="bottom_left_corner.png"></div>
+        <div class="bottomrightcorner"><img src="bottom_right_corner.png"></div>
+        <!-- navigation -->
         <header>
-            <a href="start.html" class="tabButton start"><p>Where To Start</p></a>
-            <a href="projects.html" class="tabButton projects"><p>Projects</p></a>
-            <a href="members.html" class="tabButton members"><p>Members</p></a>
+            <div class="tabButton start" id="tab-start">
+                <p> Where To Start</p>
+            </div>
+
+            <div class="tabButton projects" id="tab-projects">
+                <p>Projects</p>
+            </div>
             
+            <div class="tabButton members" id="tab-members">
+                <p>Members</p>
+            </div>
+
         </header>
 
+        <!-- pages -->
         <section>
             <div class="welcomeText">
-            <p>Welcome to the</p>
-            <img src="cs_club_logo.gif" alt="cs_logo">
-            <p>Club!</p>
- 
+                <div id="page-start" class="page"> <!-- gave it an id-->
+                <p>Welcome to the</p>
+                <img src="cs_club_logo.gif" alt="cs_logo">
+                <p>Club!</p>
+            </div>
+            
+            </div>
+
         </section>
 
+        <script src="script.js"></script>
     </body>
 </html>
