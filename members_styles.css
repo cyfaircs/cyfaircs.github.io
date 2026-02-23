@@ -1,0 +1,148 @@
+body.home {
+    height: 100vh;
+    width: 100vw;
+    background-image:url("images/cs_club_background.webp");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+    height: 15vh;
+    padding: 1vh 0;
+    position: relative;
+}
+
+div.tabButton,
+a.tabButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:solid white 0.5vh;
+    color: white;
+    text-align: center;
+    font-family: pixelFont;
+    font-size: 2.5vw;
+    width: 20vw;
+    height: 10vh;
+    letter-spacing: 1vw;
+    text-decoration: none;
+}
+div.tabButton.start, a.tabButton.start {color: red;}
+div.tabButton.projects, a.tabButton.projects {color: lime;}
+div.tabButton.members, a.tabButton.members {color: blueviolet;}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 85vh;
+}
+
+div.welcomeText {
+    font-family: pixelFont;
+    font-size: 7vw;
+    letter-spacing: 10px;
+}
+div.welcomeText p {
+    margin: 0;
+    text-align: center;
+}
+div.welcomeText img {
+    width: 18vw;
+    height: 12vw;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+@font-face{
+    font-family: pixelFont; 
+    src: url(images/arcadeclassic.regular.ttf);
+    font-weight: bold;
+}
+
+/*------------------------MEMBERS--------------------------------------------*/
+
+body.members {
+    height: 100vh;
+    width: 100vw;
+    background-image:url(images/STScI-01GS7ZWFFAMJFSB6XXHRVQ7147.png);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+div.members2 {
+    color: aliceblue;
+    font-size: 5vw;
+    font-family: pixelFont;
+}
+
+div.block {
+    background-color: black; 
+    height: 500px; 
+    width: 35%;
+    margin-left: 25px;
+    border-style: solid;
+    border-color: rgb(127, 130, 132);
+}
+
+.blockText {
+ font-family:pixelFont;
+    font-size: 2.5vw;
+    color: #4dd0e1;
+  text-align: center;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+.blockText2 {
+font-family:pixelFont;
+    font-size: 2vw;
+    color: #4dd0e1;
+  text-align: center;
+    display:block;
+    margin: 0;
+}
+
+.blockText3{
+ font-family:pixelFont;
+    font-size: 2.5vw;
+    color: #ffab40;
+  text-align: center;
+    margin: 0;
+}
+
+.blockText4{
+   font-family:pixelFont;
+    font-size: 2vw;
+    color:#ffab40;
+  text-align: center;
+    display:block;
+    margin: 0; 
+}
+
+.mac {
+    top: 5px;
+    right: -235px;
+    position: fixed;
+    
+}
+
+.earth {
+    position: absolute;
+    right: 2vw;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5vw;
+    height: auto;
+}
+
+

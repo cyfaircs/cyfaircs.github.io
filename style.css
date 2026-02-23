@@ -53,7 +53,7 @@ header {
     padding: 1vh 0;
 }
 
-div.tabButton {
+.tabButton {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,10 +65,11 @@ div.tabButton {
     width: 20vw;
     height: 10vh;
     letter-spacing: 1vw;
+    text-decoration: none;
 }
-div.tabButton.start {color: red;}
-div.tabButton.projects {color: lime;}
-div.tabButton.members {color: blueviolet;}
+.tabButton.start {color: red;}
+.tabButton.projects {color: lime;}
+.tabButton.members {color: blueviolet;}
 
 section {
     display: flex;
