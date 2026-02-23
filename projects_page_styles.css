@@ -1,0 +1,159 @@
+body {
+  width: 100vw;
+  background-color: black; /* change */
+}
+
+div.topleftcorner {
+  /* change */
+  width: 12vw;
+  height: 12vw;
+  display: flex;
+  justify-content: left;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+div.toprightcorner {
+  /* change */
+  width: 12vw;
+  height: 12vw;
+  display: flex;
+  justify-content: right;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+div.bottomleftcorner {
+  /* change */
+  width: 12vw;
+  height: 12vw;
+  display: flex;
+  justify-content: left;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+div.bottomrightcorner {
+  /* change */
+  width: 12vw;
+  height: 12vw;
+  display: flex;
+  justify-content: left;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10vw;
+  height: 15vh;
+  padding: 1vh 0;
+}
+
+.tabButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid white 0.5vh;
+  font-family: pixelFont;
+  font-size: 2.5vw;
+  width: 20vw;
+  height: 10vh;
+  letter-spacing: 1vh;
+  text-align: center;
+  text-decoration: none;
+}
+.tabButton.start {
+  color: red;
+} /* these do nothing rn*/
+.tabButton.projects {
+  color: lime;
+}
+.tabButton.members {
+  color: blueviolet;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 85vh;
+}
+
+div.welcomeText {
+  font-family: pixelFont;
+  font-size: 7vw;
+}
+div.welcomeText p {
+  margin: 0;
+  text-align: center;
+}
+div.welcomeText img {
+  width: 18vw;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+/* put this at top of each page*/
+.pageTitle {
+  height: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: pixelFont;
+  font-size: 1.5vw;
+  color: yellow;
+  margin-bottom: 1vh;
+}
+
+/* stuff on projects.html*/
+.projectsPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.projectSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 0.3vh solid white;
+}
+
+.projectSection img {
+  width: 10vw;
+  height: auto;
+  padding: 0 1vw;
+}
+
+.projectInfo {
+  width: 50vw;
+  color: white;
+  font-family: pixelFont;
+  letter-spacing: 0.4vh;
+  padding: 0 1vw;
+}
+
+.pastProjectsSection {
+  display: flex;
+  justify-content: center;
+  font-family: pixelFont;
+  letter-spacing: 0.4vh;
+  border: 0.5vh solid white;
+  margin: 1vw;
+}
+
+@font-face {
+  font-family: pixelFont;
+  src: url(arcadeclassic.ttf);
+  font-weight: bold;
+}
