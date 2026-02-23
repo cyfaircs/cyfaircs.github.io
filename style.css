@@ -1,0 +1,103 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;    /* change */
+}    
+
+div.topleftcorner {     /* change */
+    width: 12vw;
+    height: 12vw;
+    display: flex;
+    justify-content: left;
+    position: fixed;
+    left:0;
+    top: 0;
+}
+
+div.toprightcorner {   /* change */
+    width: 12vw;
+    height: 12vw;
+    display: flex;
+    justify-content: right;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+div.bottomleftcorner {      /* change */
+    width: 12vw;
+    height: 12vw;
+    display: flex;
+    justify-content: left;
+    position: fixed;
+    left:0;
+    bottom: 0;
+}
+
+div.bottomrightcorner { /* change */
+    width: 12vw;
+    height: 12vw;
+    display: flex;
+    justify-content: left;
+    position: fixed;
+    right:0;
+    bottom: 0;
+}
+
+header {    
+    display: flex;          
+    justify-content: center;      
+    align-items: center;
+    gap: 10vw;
+    height: 15vh;
+    padding: 1vh 0;
+}
+
+div.tabButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:solid white 0.5vh;
+    color: white;
+    text-align: center;
+    font-family: pixelFont;
+    font-size: 2.5vw;
+    width: 20vw;
+    height: 10vh;
+    letter-spacing: 1vw;
+}
+div.tabButton.start {color: red;}
+div.tabButton.projects {color: lime;}
+div.tabButton.members {color: blueviolet;}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 85vh;
+}
+
+div.welcomeText {
+    font-family: pixelFont;
+    font-size: 7vw;
+}
+div.welcomeText p {
+    margin: 0;
+    text-align: center;
+}
+div.welcomeText img {
+    width: 18vw;
+    height: 12vw;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+
+@font-face{
+    font-family: pixelFont; 
+    src: url(arcadeclassic.ttf);
+    font-weight: bold;
+}
