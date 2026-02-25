@@ -27,3 +27,7 @@ function background_color() {
 
     }
 };
+// This function will take the user to the projects page.
+function Projects() {
+    window.location.href = "projects.html";
+};
