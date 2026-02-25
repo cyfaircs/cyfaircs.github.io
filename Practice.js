@@ -1,13 +1,16 @@
 // Creates a variable that references the button named "practiceButton" in the HTML file.
 const pButton = document.getElementById("practiceButton");
 
+
 // Will be set to false when background is black
 let current_color = true;
+
 
 // This function will change the color of the button after it's pressed.
 function bColor_Change() {
     pButton.style.color = "purple";
 };
+
 
 // This function will alternate the color for background of the page
 function background_color() {
@@ -27,7 +30,15 @@ function background_color() {
 
     }
 };
+
+
 // This function will take the user to the projects page.
-function Projects() {
+function toProjects() {
     window.location.href = "projects.html";
+};
+
+
+// This function will take the user to the home page.
+function toHome() {
+    window.location.href = "index.html";
 };

@@ -10,13 +10,16 @@
         <p>Greetings one and all! Thanks for visiting!</p>
         
         <!-- Defining and naming the button (id) and telling the site to execute the function "bColor_Change()" when clicked"-->
-        <button id = "practiceButton" type = "button" onclick= "bColor_Change()">Clickable</button>
+        <button style = "cursor: pointer; background-color: yellow" id = "practiceButton" type = "button" onclick= "bColor_Change()">Clickable</button>
         
         <!--Button to change the background color-->
-        <button type = "button" onclick= "background_color()">Background</button>
+        <button style = "cursor: pointer; background-color: red;" type = "button" onclick= "background_color()">Background</button>
 
         <!--Button to take the user to the projects page-->
-        <button type = "button" onclick = "Projects()">Projects Link</button>
+        <button style = "cursor: pointer; background-color: lime" type = "button" onclick = "toProjects()">Projects</button>
+
+        <!--Button to take the user back to the home HTML file (index.html)-->
+        <button style = "cursor: pointer; background-color: blueviolet" type = "button" onclick = "toHome()">Home</button>
 
         <!--Adds a newline of whitespace so the YouTube link doesn't overlap with the buttons.-->
         <p></p>

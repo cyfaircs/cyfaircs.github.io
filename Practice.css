@@ -7,7 +7,6 @@ h2 {
 }
 body {
     background: linear-gradient(#78caf1, rgb(230, 114, 234));
-    font-family: Arial, Helvetica, sans-serif;
     color: white;
     text-align: center;
     height: 100vh;
@@ -22,4 +21,14 @@ a {
     color: blue;
     text-decoration: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0,2);
+}
+
+button {
+    color: blue;                /* Only changes color of the text */
+    padding: 15px 40px 15px 40px;
+    margin: 10px;
+    font-size: 14px;
+    font-family: "Press Start 2P", system-ui;
+    border: 0;
+    box-shadow: 0px 5px black, 0px -5px black, 5px 0px black, -5px 0px black, 0px 10px #00000038, 5px 5px #00000038, -5px 5px #00000038, inset 0px 5px #ffffff36 
 }
