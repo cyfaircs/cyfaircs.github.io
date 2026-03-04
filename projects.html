@@ -3,6 +3,7 @@
 <head>
     <title>CS Club Projects</title>
     <link rel="stylesheet" href="projects_page_styles.css">
+    <meta charset="UTF-8"> <!-- Allows us to display special characters like "←" -->
 </head>
 <body>
     <div class="topleftcorner"><img src="top_left_corner.png"></div>    <!-- change -->
@@ -12,9 +13,19 @@
 
 
     <header>
+        <!--
         <a href="start.html" class="tabButton start"><p>Where To Start</p></a>
         <a href="projects.html" class="tabButton projects"><p>Projects</p></a>
         <a href="members.html" class="tabButton members"><p>Members</p></a>
+        -->
+
+        <!-- My changes -->
+        <button type = "button" style = "cursor: pointer; background-color: blue" onclick = "goBack()">← BACK</button>
+        <button type = "button" style = "cursor: pointer; background-color: red" onclick = "toWhereToStart()">WHERE TO START</button>
+        <button type = "button" style = "cursor: pointer; background-color: lime" onclick = "toHome()">HOME</button>
+        <button type = "button" style = "cursor: pointer; background-color: blueviolet" onclick = "toMembers()">MEMBERS</button>
+        <button type = "button" style = "cursor: pointer" class = "theme" id = "background" onclick = "changeBackground()">THEME</button>
+        <!-- End of changes -->
      </header>
         
             
@@ -55,6 +66,7 @@
             <a href="past_projects.html"><p>Old Projects</p></a>
         </div>
     </section>
-
+    
+    <script src="script.js"></script>
 </body>
 </html>

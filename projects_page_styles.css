@@ -51,11 +51,11 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10vw;
+  gap: 4vw;               /* Changed from 10px */
   height: 15vh;
   padding: 1vh 0;
 }
-
+/*
 .tabButton {
   display: flex;
   justify-content: center;
@@ -72,12 +72,42 @@ header {
 .tabButton.start {
   color: red;
 } /* these do nothing rn*/
+ /*
 .tabButton.projects {
   color: lime;
 }
 .tabButton.members {
   color: blueviolet;
 }
+*/
+
+
+/* My changes */
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border:solid white 0.3vh; */ 
+    color: white;
+    text-align: center;
+    font-family: pixelFont;
+    font-size: 1.5vw;
+    width: 13vw;
+    height: 8vh;
+    letter-spacing: 0.5vw;
+    text-decoration: none;
+    box-shadow: 0px 3px gray, 0px -3px gray, 3px 0px gray, -3px 0px gray, 0px 5px gray, 3px 3px gray, -3px 3px gray
+}
+/* Makes the buttons have a special effect when pressed */
+button:active {
+     transform: translateY(5px);
+     box-shadow: 0px 5px gray, 0px -5px gray, 5px 0px gray, -5px 0px gray,inset 0px 5px #00000038;
+}
+
+
+/* End of changes */
+
 
 section {
   display: flex;

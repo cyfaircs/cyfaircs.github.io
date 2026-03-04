@@ -1,0 +1,85 @@
+/*
+
+// grab the ID for ease of use
+const tabStart = document.getElementById("tab-start");
+const tabProjects = document.getElementById("tab-projects");
+const tabMembers = document.getElementById("tab-members");
+
+// grab the pages for ease of use
+const pageStart = document.getElementById("page-start");
+const pageProjects = document.getElementById("page-projects");
+const pageMembers = document.getElementById("page-members");
+
+// dont know if we need these, just have them here in case
+const tabs = [tabStart, tabProjects, tabMembers];
+const pages = [pageStart, pageProjects, pageMembers]; 
+
+// event Listeners
+tabStart.addEventListener("click", function() {
+  window.location.href = "index.html"
+});
+
+tabProjects.addEventListener("click", function() {
+  window.location.href = "projects.html"
+});
+
+tabMembers.addEventListener("click", function() {
+  window.location.href = "members.html"
+});
+
+*/
+
+
+
+
+// My changes:
+
+let themeButton = document.getElementById("background");
+themeButton.style.background = "black";
+themeButton.style.color = "white";
+
+let currentBackgroundColor = "black";
+
+function toWhereToStart() {
+  window.location.href = "wheretostart.html";
+};
+
+function toProjects() {
+  window.location.href = "projects.html";
+};
+
+function toMembers() {
+  window.location.href = "members.html";
+};
+
+function toHome() {
+  window.location.href = "index.html";
+};
+
+function goBack() {
+  if (window.history.length > 1) {
+    window.history.back();
+  } else {
+    alert("No history found.");
+  }
+}
+
+function changeBackground() {
+  if (currentBackgroundColor === "black") {
+    document.body.style.background = "white";
+    themeButton.style.color = "black";
+    themeButton.style.border = "solid black 0.3vh";
+    themeButton.style.background = "white";
+    currentBackgroundColor = "white";
+
+  } else {
+    document.body.style.background = "black";
+    themeButton.style.color = "white";
+    themeButton.style.border = "solid white 0.3vh";
+    themeButton.style.background = "black";
+    currentBackgroundColor = "black";
+  }
+}
+
+
+// End of changes
