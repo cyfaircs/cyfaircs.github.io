@@ -1,6 +1,12 @@
-@font-face {
+/* @font-face {
     font-family: Thefont;
     src: url(arcadeclassic.regular.ttf);
+    font-weight: bold;
+} */
+
+@font-face{
+    font-family: pixelFont; 
+    src: url(arcadeclassic.ttf);
     font-weight: bold;
 }
 
@@ -34,8 +40,15 @@ body {
     padding: 0 20px;
 }
 
+.container2 {
+  display: grid;
+  grid-template-rows: 1fr 2fr; /* top = 1 part, bottom = 2 parts */
+  height: 100vh; /* or whatever fixed height you want */
+  gap: 20px;
+}
+
 .navText {
-    font-family: Thefont;
+    font-family: pixelFont;
     list-style: none;
     color: #eeff41;
     font-size: 2rem;
@@ -148,13 +161,6 @@ footer li {
 footer img {
   width: 100%;
   height: 100%;
-}
-
-.container2 {
-  display: grid;
-  grid-template-rows: 1fr 2fr; /* top = 1 part, bottom = 2 parts */
-  height: 100vh; /* or whatever fixed height you want */
-  gap: 20px;
 }
 
 @media(max-width:500px) {
