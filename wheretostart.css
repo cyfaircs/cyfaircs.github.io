@@ -1,0 +1,220 @@
+@font-face {
+    font-family: Thefont;
+    src: url(arcadeclassic.regular.ttf);
+    font-weight: bold;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(46, 48, 49);
+    background-image: url(images/cs_club_background_image.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    /* background-color: rgb(161, 20, 173); */
+    margin: 0 auto;
+    /* height: 100vh; */
+    box-sizing: border-box;
+    padding: 0 20px;
+
+    max-width: 1500px;   /* maximum width on large screens */
+    width: 100%;          /* shrink on smaller screens */
+    margin: 0 auto;       /* center horizontally */
+    min-height: 100vh;    /* full viewport height, can grow */
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+.navText {
+    font-family: Thefont;
+    list-style: none;
+    color: #eeff41;
+    font-size: 2rem;
+    border: 1px solid #eeff41;
+    padding: 20px 30px;
+    margin-top: 20px;
+}
+
+.navColor {
+    color: #eeff41;
+    text-decoration: none;
+}
+
+.alignNav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navColor {
+    color: #eeff41;
+    text-decoration: none;
+}
+
+section {
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+main ul {
+  width: 1200px;
+  margin: 0 auto 48px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 20px;
+
+}
+
+ul {
+    list-style: none;
+}
+
+.two {
+    grid-column: 2;
+    grid-row: 1 / 3;
+}
+
+li:nth-of-type(4) {
+  grid-column: 1/3;
+}
+
+main li {
+  display: flex;
+  background-color: #efe7f7;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+main li img {
+  width: 300px;
+  height: 280px;
+  object-fit: cover;
+}
+
+.item-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.item-content h2 {
+  margin: 0;
+}
+
+.actions {
+  text-align: right;
+}
+
+.actions a {
+  text-decoration: none;
+  padding: 6px;
+  color: rgb(22, 211, 228);
+  border-radius: 5px;
+}
+
+.actions a:hover {
+  background-color: rgb(235, 253, 255);
+}
+
+footer {
+  background: linear-gradient(70deg, rgb(24, 24, 24), rgb(25, 29, 29));
+  padding: 36px 0;
+  width: 100%;
+   margin: 0 auto
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  /* padding: 40px; */
+}
+
+footer li {
+  width: 80px;
+  height: 80px;
+  margin: 0 50px;
+}
+
+footer img {
+  width: 100%;
+  height: 100%;
+}
+
+.container2 {
+  display: grid;
+  grid-template-rows: 1fr 2fr; /* top = 1 part, bottom = 2 parts */
+  height: 100vh; /* or whatever fixed height you want */
+  gap: 20px;
+}
+
+@media(max-width:500px) {
+     body {
+        background-image: none;      /* removes the background image */
+        background-color: rgb(46, 48, 49); /* fallback background color */
+    }
+    .alignNav {
+        flex-direction: column;
+        align-items: center;     /* center horizontally */
+        gap: 10px;
+    }
+
+    .navText {
+        width: 90%;          /* full width of parent */
+        box-sizing: border-box; /* include padding in width */
+        text-align: center;   /* optional: center text */
+        margin-top: 0;        /* remove extra top margin if needed */
+    }
+
+    main ul {
+        grid-template-columns: 1fr; /* single column layout */
+        width: 100%;                /* take full container width */
+        gap: 20px;  
+        justify-items: center;  
+        padding: 0 10px;                  /* spacing between cards */
+    }
+
+    .ms {
+        grid-column: auto; /* reset any previous 2-column spanning */
+        grid-row: auto;    /* reset row spanning */
+    }
+
+    li:nth-of-type(4) {
+        grid-column: auto; /* reset spanning for 4th card */
+    }
+
+    main li {
+        width: 100%;                  /* cards take full container width */
+        max-width: 400px; 
+        flex-direction: column; /* optional: make content stack if needed */
+    }
+
+    main li img {
+        width: 100%;  /* make images full width of card */
+        height: auto; /* maintain aspect ratio */
+    }
+
+    .links {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .footerLi {
+      padding: 0;
+      margin: 0;
+    }
+
+    a img{
+      width: 50px;
+      height: 50px;
+    }
+}
