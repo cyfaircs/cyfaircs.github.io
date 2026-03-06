@@ -1,0 +1,101 @@
+/* pixel font */
+@font-face {
+  font-family: pixelFont;
+  src: url(arcadeclassic.ttf);
+  font-weight: bold;
+}
+
+/* base */
+body {
+  margin: 0;
+  width: 100vw;
+  background-color: black;
+  color: white;
+  font-family: pixelFont, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* corners: visible, never block clicks */
+.topleftcorner,
+.toprightcorner,
+.bottomleftcorner,
+.bottomrightcorner {
+  width: 12vw;
+  height: 12vw;
+  display: flex;
+  position: fixed;
+  z-index: 0;
+  pointer-events: none;
+}
+.topleftcorner    { left: 0;  top: 0;    justify-content: left; }
+.toprightcorner   { right: 0; top: 0;    justify-content: right; }
+.bottomleftcorner { left: 0;  bottom: 0; justify-content: left; }
+.bottomrightcorner{ right: 0; bottom: 0; justify-content: left; }
+
+/* keep content clickable above corners */
+header, section { position: relative; z-index: 1; }
+
+/* header / tabs */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10vw;
+  height: 15vh;
+  padding: 1vh 0;
+}
+.tabButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  height: 10vh;
+  border: solid white 0.5vh;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-family: pixelFont;
+  font-size: 2.5vw;
+  letter-spacing: 1vw; /* keep 1vw to match homepage */
+}
+.tabButton p { margin: 0; }
+.tabButton.start   { color: red; }
+.tabButton.projects{ color: lime; }
+.tabButton.members { color: blueviolet; }
+
+/* main */
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+  text-align: center;
+}
+
+/* headline */
+.welcomeText { font-family: pixelFont; font-size: 3.5vw; }
+.welcomeText p { margin: 0; }
+.welcomeText img {
+  width: 18vw;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+/* title (kept for parity) */
+.pageTitle {
+  height: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: pixelFont;
+  font-size: 1.5vw;
+  color: yellow;
+  margin-bottom: 1vh;
+}
+
+/* plain links (Logic team will style later) */
+.links ul { list-style: none; padding: 0; margin: 1rem 0 0; }
+.links li { margin: .25rem 0; }
+.links a  { color: white; text-decoration: underline; }
