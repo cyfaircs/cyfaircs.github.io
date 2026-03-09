@@ -1,0 +1,61 @@
+// Creates a variable that references the button named "practiceButton" in the HTML file.
+const pButton = document.getElementById("practiceButton");
+
+// Variable that can reference the image on the page.
+const image = document.getElementById("image")
+
+
+// Will be set to false when background is black
+let current_color = true;
+
+// Will be 0, 1, or 2 depending on the current image displayed on the page.
+let index = 0;
+
+// List of all the images that are cycled through.
+let images = ["Pigeon.jpg", "Goose.jpg", "Mountain.png"];
+
+// This function will change the color of the button after it's pressed.
+function bColor_Change() {
+    pButton.style.color = "purple";
+};
+
+
+// This function will alternate the color for background of the page
+function background_color() {
+    if (current_color) {
+
+        // When the function is first called, the current_color variable will be true,
+        // so the background is changed to black. Then the variable is changed to false
+        // so that the next time the button is pressed, the background will be changed to white.
+        document.body.style.background = "black";
+        current_color = !current_color;
+
+    }
+    else {
+
+        document.body.style.background = "white";
+        current_color = !current_color
+
+    }
+};
+
+
+// This function will take the user to the projects page.
+function toProjects() {
+    window.location.href = "projects.html";
+};
+
+
+// This function will take the user to the home page.
+function toHome() {
+    window.location.href = "index.html";
+};
+
+// This function alternates the image displayed on the page.
+function swapImage() {
+    image.src = images[index];
+    index++;
+
+    if (index >= images.length)
+        index = 0;
+};
