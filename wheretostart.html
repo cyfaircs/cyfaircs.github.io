@@ -1,77 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Where2Start</title>
-    <link rel="stylesheet" href="wheretostart.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Where2Start</title>
+  <link rel="stylesheet" href="wheretostart.css" />
 </head>
-
 <body>
-    <div>
-        <div>
-            <ul class="alignNav ">
-                <li class="navText"><a class="navColor" href="index.html">Welcome page</a></li>
-                <li class="navText">Members</li>
-                <!-- <li class="navText"> Where 2 Start</li> -->
-                <li class="navText">Projects</li>
-            </ul>
+
+  <div class="topleftcorner"><img src="top_left_corner.png"></div>
+        <div class="toprightcorner"><img src="top_right_corner.png"></div>
+        <div class="bottomleftcorner"><img src="bottom_left_corner.png"></div>
+        <div class="bottomrightcorner"><img src="bottom_right_corner.png"></div>
+
+  <header>
+    <button type="button" style="cursor:pointer; background-color: rgb(12,74,207)" onclick="window.location.href='wheretostart.html'">WHERE TO START</button>
+    <button type="button" style="cursor:pointer; background-color: rgb(15,129,15)" onclick="window.location.href='projects.html'">PROJECTS</button>
+    <button type="button" style="cursor:pointer; background-color: rgb(115,24,199)" onclick="window.location.href='members.html'">MEMBERS</button>
+    <button type="button" style="cursor:pointer; background-color: rgba(128,128,128,0.63)" onclick="window.location.href='index.html'">HOME</button>
+  </header>
+
+  <main class="container">
+    <ul>
+      <li>
+        <img src="images/2.jpg" alt="Computer Science Club working session photo" />
+        <div class="item-content">
+          <div>
+            <h2>About Us</h2>
+            <p>
+              Hello we are the Computer Science Club at Lone Star College-CyFair! Whether you're writing your first
+              line of code or building full-stack apps, this is a space for you. We support students of all levels
+              and involve them in numerous projects, including this website.
+            </p>
+          </div>
         </div>
+      </li>
 
-        <main class="container">
-            <ul>
-                <li>
-                    <img src="" alt="" />
-                    <div class="item-content">
-                        <div>
-                            <h2>About Us</h2>
-                            <p>
-                                Hello we are the Computer Science Club at Lone Star College-CyFair! Whether you're
-                                writing your first
-                                line of code
-                                or building full-stack apps, this is a space for you. We support students of all levels
-                                and involve them in numerous projects, including this website. 
-                            </p>
-                        </div>
+      <li class="ms">
+        <img src="images/5.jpg" alt="Student assembling or debugging a device" />
+        <div class="item-content">
+          <div>
+            <h2>Mission Statement</h2>
+            <p>
+              Our mission is morph computer science students into professionals. We provide support and advice to people of all skill levels.
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </main>
 
-                        <div class="actions">
-                            <a href="#">Explore &#x21A3</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="ms">
-                    <img src="" alt="" />
-                    <div class="item-content">
-                        <div>
-                            <h2>Mission Statement</h2>
-                            <p>
-                                Our mission is to hone the skills of interested students to become professionals in
-                                world of computer science.
-                            </p>
-                        </div>
-
-                        <div class="actions">
-                            <a href="#">Explore &#x21A3</a>
-                        </div>
-                    </div>
-                </li>
-        </main>
-
-        <footer>
-            <ul class="links">
-                <li class="footerLi">
-                    <a href="https://www.instagram.com/lsc.compsci/"><img src="images/insta.png" alt="insta" /></a>
-                </li>
-
-                <li class="footerLi">
-                    <a href="https://github.com/cyfaircs"><img src="images/github6.jpg" alt="github" /></a>
-                </li>
-                <li class="footerLi">
-                    <a href="https://discord.gg/uPzy4pr77h"><img src="images/discord5.webp" alt="discord" /></a>
-                </li>
-            </ul>
-        </footer>
+  <footer>
+    <ul class="links">
+      <li><a href="https://www.instagram.com/lsc.compsci/" aria-label="Instagram"><img src="images/insta.png" alt="Instagram logo" /></a></li>
+      <li><a href="https://github.com/cyfaircs" aria-label="GitHub"><img src="images/github5.png" alt="GitHub logo" /></a></li>
+      <li><a href="https://discord.gg/uPzy4pr77h" aria-label="Discord"><img src="images/discord5.webp" alt="Discord logo" /></a></li>
+    </ul>
+  </footer>
 </body>
-
 </html>
