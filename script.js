@@ -29,15 +29,6 @@ tabMembers.addEventListener("click", function() {
 
 */
 
-
-
-
-// My changes:
-
-let themeButton = document.getElementById("background");
-themeButton.style.background = "black";
-themeButton.style.color = "white";
-
 let currentBackgroundColor = "black";
 
 function toWhereToStart() {
@@ -67,19 +58,10 @@ function goBack() {
 function changeBackground() {
   if (currentBackgroundColor === "black") {
     document.body.style.background = "white";
-    themeButton.style.color = "black";
-    themeButton.style.border = "solid black 0.3vh";
-    themeButton.style.background = "white";
     currentBackgroundColor = "white";
 
   } else {
     document.body.style.background = "black";
-    themeButton.style.color = "white";
-    themeButton.style.border = "solid white 0.3vh";
-    themeButton.style.background = "black";
     currentBackgroundColor = "black";
   }
 }
-
-
-// End of changes
