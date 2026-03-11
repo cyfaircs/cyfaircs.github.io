@@ -48,7 +48,7 @@ header {
     display: flex;          
     justify-content: center;      
     align-items: center;
-    gap: 5vw;
+    gap: 8vw;
     height: 15vh;
     padding: 1vh 0;
 }
